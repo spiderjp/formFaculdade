@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Informações Faculdade</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <form method="POST" action="processadados.jsp">
+            
+        <h1>Insira as suas informações da Faculdade:</h1>
+        
+        <p>Nome:</p>
+        
+            <input type = "text" name="nome">
+            
+        <p>Local de moradia:</p>
+        <input type = "radio" id="bairroAF" name="selecionarbairro" value="AF">AF
+                
+                
+        <input type = "radio" id="bairroSMP" name="selecionarbairro" value="SMP">SMP 
+                
+        
+        <p>Semestre Atual:</p>
+        
+                <select name="semestreatual" id="semestre">
+
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>                
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+
+                </select>
+        
+        <p>Deseja um curso de atualização?</p>
+        
+        <input type = "checkbox" id = "cursoSim" name = "atualizacao" value = "sim">
+            <label for = "atualizacao">Sim</ label>
+             
+                <br/>
+                <br/>
+                
+                <input type="submit" value="Enviar" name="envio" id="enviodados" />
+                
+        </form>
+                
+               
+    </body>
+</html>
